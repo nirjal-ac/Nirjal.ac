@@ -1,0 +1,299 @@
+
+<!-- Full updated HTML with working WhatsApp form --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirjal Air Conditioner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      background: linear-gradient(135deg, #8e44ad, #00fff7);
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7; }
+      to { text-shadow: 0 0 20px #00fff7, 0 0 30px #00fff7; }
+    }
+    header p {
+      font-size: 1.1em;
+      margin-top: 15px;
+      color: #eee;
+      font-style: italic;
+    }
+    .btn {
+      margin: 10px;
+      display: inline-block;
+      background-color: #000;
+      color: #00fff7;
+      border: 2px solid #00fff7;
+      padding: 12px 26px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 0 15px #00fff7;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+    .btn:hover {
+      background-color: #00fff7;
+      color: #000;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: #8e44ad;
+      text-shadow: 0 0 8px #8e44ad;
+    }
+    .service-card {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      background: linear-gradient(145deg, #1a1a1a, #222);
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2), inset 0 0 15px #8e44ad;
+      border-radius: 20px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .service-card:hover {
+      transform: rotateY(5deg) scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 255, 255, 0.5), inset 0 0 20px #8e44ad;
+    }
+    .service-card h3 {
+      font-size: 1.8em;
+      color: #00fff7;
+      margin-bottom: 12px;
+    }
+    .service-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .service-card li {
+      font-size: 1.1em;
+      margin: 6px 0;
+      text-shadow: 0 0 5px #8e44ad;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, textarea, select {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 10px;
+      border: none;
+      background: #222;
+      color: white;
+      font-size: 1em;
+    }
+    .submit-btn {
+      background-color: #00fff7;
+      color: #000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #111;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
+    }
+    iframe {
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background-color: #25D366;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #25D366;
+      transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-float img {
+      width: 48px;
+      height: 48px;
+    }
+  </style>
+</head>
+<body><header>
+  <canvas class="particles"></canvas>
+  <h1>Nirjal Air Conditioner</h1>
+  <p>Electronic Repair Experts</p>
+  <a class="btn" href="tel:+919210702922">Call Now</a>
+  <a class="btn" href="https://wa.me/919210702922">WhatsApp Us</a>
+  <a class="btn" href="https://g.co/kgs/inyfQhF" target="_blank">⭐ See Us on Google</a>
+</header><section>
+  <h2>Our Services</h2>  <div class="service-card">
+    <h3>AC Services</h3>
+    <ul>
+      <li>AC Installation</li>
+      <li>AC Gas Filling</li>
+      <li>AC Jet Pump Clean</li>
+      <li>AC Piping</li>
+      <li>AC Service</li>
+      <li>All Type AC Repair</li>
+    </ul>
+  </div>  <div class="service-card">
+    <h3>Refrigerator Services</h3>
+    <ul>
+      <li>Gas Filling</li>
+      <li>Repairing</li>
+    </ul>
+  </div>  <div class="service-card">
+    <h3>PCB Repair</h3>
+    <ul>
+      <li>All Type PCB Repairing</li>
+    </ul>
+  </div>  <div class="service-card">
+    <h3>All Home Appliances</h3>
+    <ul>
+      <li>Microwave Repair</li>
+      <li>Washing Machine Service</li>
+      <li>Geyser Repair</li>
+      <li>Other Electronic Items</li>
+    </ul>
+  </div>
+</section><section>
+  <h2>Book a Service</h2>
+  <form onsubmit="sendToWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="address" placeholder="Your Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <select id="service" required>
+      <option value="">Select Service</option>
+      <option>AC Installation</option>
+      <option>AC Gas Filling</option>
+      <option>AC Jet Pump Clean</option>
+      <option>AC Piping</option>
+      <option>AC Service</option>
+      <option>All Type AC-&-PCB Repair</option>
+      <option>Refrigerator Gas Filling</option>
+      <option>Refrigerator Repairing</option>
+      <option>All Type PCB Repairing</option>
+      <option>Microwave Repair</option>
+      <option>Washing Machine Service</option>
+      <option>Geyser Repair</option>
+      <option>Led TV Repair</option>
+      <option>Other Electronic Items</option>
+    </select>
+    <textarea id="message" placeholder="Your Message (Optional)"></textarea>
+    <button class="submit-btn" type="submit">Submit Booking</button>
+  </form>
+</section><section>
+  <h2>Find Us</h2>
+  <p>📍 Site4/17, Budella, Vikaspuri, New Delhi, Delhi 110018<br>📞 +91 92107 02922</p>
+</section><footer>
+  <p>&copy; 2025 Nirjal Air Conditioner. All rights reserved.</p>
+</footer><a href="https://wa.me/919210702922" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png" alt="WhatsApp" />
+</a><script>
+  const canvas = document.querySelector('.particles');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let particles = [];
+
+  function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = document.querySelector('header').offsetHeight;
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  function Particle() {
+    this.x = Math.random() * width;
+    this.y = Math.random() * height;
+    this.radius = Math.random() * 3 + 1;
+    this.speedX = Math.random() * 1 - 0.5;
+    this.speedY = Math.random() * 1 - 0.5;
+    this.color = `rgba(0,255,255,${Math.random()})`;
+  }
+
+  Particle.prototype.update = function () {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    if (this.x < 0 || this.x > width || this.y < 0 || this.y > height) {
+      this.x = Math.random() * width;
+      this.y = Math.random() * height;
+    }
+  };
+
+  Particle.prototype.draw = function () {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  };
+
+  for (let i = 0; i < 100; i++) {
+    particles.push(new Particle());
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    particles.forEach(p => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script><script>
+  function sendToWhatsApp() {
+    let name = document.getElementById("name").value;
+    let address = document.getElementById("address").value;
+    let phone = document.getElementById("phone").value;
+    let service = document.getElementById("service").value;
+    let message = document.getElementById("message").value;
+
+    let fullMessage = `*Service Booking Request*%0A👤 Name: ${name}%0A🏠 Address: ${address}%0A📞 Phone: ${phone}%0A🔧 Service: ${service}%0A💬 Message: ${message}`;
+
+    window.open(`https://wa.me/919210702922?text=${fullMessage}`, '_blank');
+  }
+</script></body>
+</html>
